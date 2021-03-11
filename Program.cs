@@ -6,7 +6,7 @@ namespace cv04_bpc_oop
     {
         static void Main(string[] args)
         {
-            PersonalCar car1 = new PersonalCar("Osobák", 60.0, 5, Car.FuelType.natural);
+            Passenger car1 = new Passenger("Osobák", 60.0, 5, Car.FuelType.natural);
             Truck car2 = new Truck("Kamion", 100.0, 4000.0, Car.FuelType.diesel);
 
             car1.Refuel(Car.FuelType.natural, 40.0);

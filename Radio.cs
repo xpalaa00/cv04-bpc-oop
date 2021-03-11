@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace cv04_bpc_oop
 {
-    class Radio
+    public class Radio
     {
         private double currentFrequency;
         public double CurrentFrequency

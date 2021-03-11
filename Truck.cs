@@ -4,7 +4,7 @@ using System.Text;
 
 namespace cv04_bpc_oop
 {
-    sealed class Truck : Car
+    sealed public class Truck : Car
     {
         private double maxLoad;
         public double MaxLoad

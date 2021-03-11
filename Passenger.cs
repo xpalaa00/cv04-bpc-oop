@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace cv04_bpc_oop
 {
-    sealed class PersonalCar : Car
+    sealed public class Passenger : Car
     {
         private int maxPassengers;
         public int MaxPassengers
@@ -29,7 +29,7 @@ namespace cv04_bpc_oop
             }
         }
 
-        public PersonalCar(string name, double fuelTankVolume, int maxPassengers, Car.FuelType consumedFuelType, double fuelTankState = 0.0, int currentPassengers = 0)
+        public Passenger(string name, double fuelTankVolume, int maxPassengers, Car.FuelType consumedFuelType, double fuelTankState = 0.0, int currentPassengers = 0)
         {
             CarRadio = new Radio();
             Name = name;
