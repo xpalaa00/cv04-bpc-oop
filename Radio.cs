@@ -5,9 +5,6 @@ namespace cv04_bpc_oop
 {
     public class Radio
     {
-        //Pozn.: Vypnuté rádio neposkytne o sobě žádné informace
-        //(při snaze získat info krom stavu zapnutí je vyhozena chyba) a nelze s ním ani manipulovat
-
         //Lze nastavit i vlastní frekvenci (pokud je zadání platné) bez ohledu na předvolby
         private double currentFrequency;
         public double CurrentFrequency

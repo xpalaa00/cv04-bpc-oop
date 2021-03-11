@@ -16,6 +16,8 @@ namespace cv04_bpc_oop
             car1.CurrentPassengers = 4;
             car2.CurrentLoad = 3501.4;
 
+            //Pozn.: Vypnuté rádio neposkytne o sobě žádné informace(při snaze získat info
+            //krom stavu zapnutí je vyhozena chyba) a nelze s ním ani manipulovat
             car1.CarRadio.RadioState = true;
             car1.CarRadio.CurrentFrequency = 100.0;
             car1.CarRadio.SavePreset(1, 97.7);
