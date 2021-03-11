@@ -4,7 +4,7 @@ using System.Text;
 
 namespace cv04_bpc_oop
 {
-    sealed class Truck : Car
+    sealed public class Truck : Car
     {
         private double maxLoad;
         public double MaxLoad
@@ -28,7 +28,7 @@ namespace cv04_bpc_oop
                     currentLoad = value;
             }
         }
-        public Truck(string name, double fuelTankVolume, double maxLoad, Car.FuelType consumedFuelType, double fuelTankState = 0.0, double currentLoad = 0)
+        public Truck(string name, double fuelTankVolume, double maxLoad, Car.FuelType consumedFuelType, double fuelTankState = 0.0, double currentLoad = 0.0)
         {
             CarRadio = new Radio();
             Name = name;

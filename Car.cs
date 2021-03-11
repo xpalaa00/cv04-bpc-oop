@@ -2,7 +2,7 @@
 
 namespace cv04_bpc_oop
 {
-    class Car
+    abstract public class Car
     {
         public string Name;
         
