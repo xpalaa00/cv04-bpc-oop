@@ -12,17 +12,21 @@ namespace cv04_bpc_oop
             car1.Refuel(Car.FuelType.natural, 40.0);
             car2.Refuel(Car.FuelType.diesel, 85.0);
 
+            //Změna současného nákladu (výchozí je 0)
             car1.CurrentPassengers = 4;
             car2.CurrentLoad = 3501.4;
 
-            car1.CarRadio.CurrentFrequency = 1.0;
-            car2.CarRadio.CurrentFrequency = 1.0;
-
             car1.CarRadio.RadioState = true;
+            car1.CarRadio.CurrentFrequency = 100.0;
             car1.CarRadio.SavePreset(1, 97.7);
             car1.CarRadio.SavePreset(5, 101.2);
             car1.CarRadio.SavePreset(6, 102.5);
+            car1.CarRadio.SavePreset(1, -1);
             car1.CarRadio.ChangeChannel(5);
+
+            car2.CarRadio.RadioState = true;
+            car2.CarRadio.CurrentFrequency = 100.0;
+            car2.CarRadio.RadioState = false;
 
             Console.WriteLine(car1.ToString());
             Console.WriteLine(car2.ToString());
